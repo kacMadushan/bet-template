@@ -24,13 +24,13 @@ export default function RootLayout({
       <body
         className={`${outfitSans.variable} antialiased`}
       >
-        <div className="flex flex-col min-h-svh">
+        <div className="flex flex-col gap-4 min-h-svh">
           <Header />
           <main className="flex flex-1 flex-col">
-            <div className="w-full mx-auto px-4 lg:max-w-7xl">
+            <div className="w-full wrapper">
               <div className="grid grid-cols-[240px_minmax(0,1fr)] gap-5">
-                <aside>Left Side bar</aside>
-                <main>
+                <aside className="bg-[#FFF]">Left Side bar</aside>
+                <main className="bg-[#FFF]">
                   {children}
                 </main>
               </div>
